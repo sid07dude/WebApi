@@ -26,7 +26,7 @@ function getMoviesByName(searchTextByTitle) {
         type: 'GET',
         dataType: 'json',
         async: true,
-        url: 'http://www.omdbapi.com?s=' + searchTextByTitle + '&apikey=f04988f0',
+        url: 'https://www.omdbapi.com?s=' + searchTextByTitle + '&apikey=f04988f0',
         success: (response) => {
             console.log(response);
             console.log(response.Response);
@@ -89,7 +89,7 @@ function getMoviesByNameAndYear(searchTextByTitleAndYear) {
         type: 'GET',
         dataType: 'json',
         async: true,
-        url: 'http://www.omdbapi.com?t=' + searchTextByTitle + '&y=' + searchTextByYear + '&apikey=f04988f0',
+        url: 'https://www.omdbapi.com?t=' + searchTextByTitle + '&y=' + searchTextByYear + '&apikey=f04988f0',
         success: (response) => {
             console.log(response);
             console.log(response.Response);
@@ -127,7 +127,7 @@ function getMoviesByID(searchTextByID) {
         type: 'GET',
         dataType: 'json',
         async: true,
-        url: 'http://www.omdbapi.com?i=' + searchTextByID + '&apikey=f04988f0',
+        url: 'https://www.omdbapi.com?i=' + searchTextByID + '&apikey=f04988f0',
 
         success: (response) => {
             console.log(response);
